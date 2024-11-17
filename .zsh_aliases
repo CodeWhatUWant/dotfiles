@@ -1,1 +1,35 @@
+# Git
+alias gs="git status"
+alias gl="git log"
+alias ga="git add -p"
+alias gadd="git add"
+alias glog="git log --graph --topo-order --pretty='%w(100,0,6)%C(yellow)%h%C(bold)%C(black)%d %C(cyan)%ar %C(green)%an%n%C(bold)%C(white)%s %N' --abbrev-commit"
+alias gc="git commit -m"
+alias gca="git commit -a -m"
+alias gpu="git pull origin"
+alias gp="git push origin"
+alias gdiff="git diff"
+alias gco="git checkout"
+alias gcoall="git checkout -- ."
+alias gb="git branch"
+alias gba="git branch -a"
+alias gr="git remote"
+alias gre="git reset"
+
+# Dirs
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# Eza
+alias ls="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias ltree="eza --tree --level=2  --icons --git"
+
+# Zoxide
+alias cd="z"
+
+# Miscellaneous
 alias cl="clear"
