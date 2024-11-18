@@ -8,7 +8,7 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
-# Aliases
+# My own aliases
 source ./.zsh_aliases
 
 # ZSH Autosuggestions
@@ -17,13 +17,20 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ZSH Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Completions
+# ZSH Completions
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
     autoload -Uz compinit
     compinit
 fi
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+# Loads NVM
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
+# Loads NVM bash complitions
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
 # History setup
 HISTFILE=$HOME/.zhistory

@@ -31,5 +31,8 @@ alias ltree="eza --tree --level=2  --icons --git"
 # Zoxide
 alias cd="z"
 
+# Bat
+alias cat="bat"
+
 # Miscellaneous
 alias cl="clear"
