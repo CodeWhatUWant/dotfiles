@@ -9,7 +9,7 @@ eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # My own aliases
-source ./.zsh_aliases
+source ~/.zsh_aliases
 
 # ZSH Autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
